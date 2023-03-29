@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("../fonts/PPNeueMontreal-Medium.otf");
+  src: local("PPNeueMontreal Medium"), local("PPNeueMontreal-Medium"),
+    url("../fonts/PPNeueMontreal-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
