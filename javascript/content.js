@@ -67,21 +67,90 @@ $(document).ready(function(){
 });
 
 // ЛЮБОВЬ
-$(function(){
+$(document).ready(function(){
   $(".duo").click(function(){
+    $(".love").css("display", "block");
     $(".love").css("opacity", "100%");
   });
 });
-$(function(){
+$(document).ready(function(){
   $(".circle").draggable();
 });
-$(function(){
+$(document).ready(function(){
   $(".love_return").click(function(){
     $(".love").css("opacity", "0");
+    setTimeout(function() {
+      $(".love").css("display", "none");
+    }, 500);
     $(".mainscreen").css("display", "block");
     setTimeout(function() {
       $(".mainscreen").css("opacity","100%");
       $(".cursorchik").css("display","block");
     }, 200);
+  });
+});
+
+// СПОКОЙСТВИЕ
+$(document).ready(function(){
+  $(".cloud").click(function(){
+    $(".calm").css("display", "block");
+    $(".calm").css("opacity", "100%");
+  });
+});
+$(document).ready(function(){
+  $(".calm_return").click(function(){
+    $(".calm").css("opacity", "0");
+    setTimeout(function() {
+      $(".calm").css("display", "none");
+    }, 500);
+    $(".mainscreen").css("display", "block");
+    setTimeout(function() {
+      $(".mainscreen").css("opacity","100%");
+      $(".cursorchik").css("display","block");
+    }, 200);
+  });
+});
+$(document).ready(function(){
+  $(".one_calm").click(function(){
+    $(".calm1").toggleClass("calm1ch");
+    $(".calm2").toggleClass("calm2ch");
+    $(".calm3").toggleClass("calm3ch");
+    $(".calm4").toggleClass("calm4ch");
+    $(".calm5").toggleClass("calm5ch");
+    $(".calm7").toggleClass("calm7ch");
+    $(".calm8").toggleClass("calm8ch");
+  });
+});
+
+// ГНЕВ
+$(document).ready(function(){
+  $(".star").click(function(){
+    $(".anger").css("display", "block");
+    $(".anger").css("opacity", "100%");
+  });
+});
+$(document).ready(function(){
+  $(".anger_return").click(function(){
+    $(".anger").css("opacity", "0");
+    setTimeout(function() {
+      $(".anger").css("display", "none");
+    }, 500);
+    $(".mainscreen").css("display", "block");
+    setTimeout(function() {
+      $(".mainscreen").css("opacity","100%");
+      $(".cursorchik").css("display","block");
+    }, 200);
+  });
+});
+$(function(){
+  $(".anger_one").click(function(){
+    $(".anger_one").toggleClass("angerCh1");
+    $(".anger_two").toggleClass("angerCh2");
+  });
+});
+$(function(){
+  $(".anger_two").click(function(){
+    $(".anger_one").toggleClass("angerCh1");
+    $(".anger_two").toggleClass("angerCh2");
   });
 });

@@ -5,7 +5,7 @@ body {
 section {
   position: absolute;
   width: 1920px;
-  height: 900px;
+  height: 100%;
   background-color: #FFFFFF;
   overflow: hidden;
 }
@@ -21,7 +21,7 @@ section {
   border-radius: 100%;
   filter: blur(4px);
   background-color: #000000;
-  z-index: 100;
+  z-index: 1001;
 }
 .cursorchik {
   position: absolute;
@@ -30,9 +30,9 @@ section {
   font-family: "PPNeueMontreal";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   transform: translate(24px, -22px);
-  z-index: 101;
+  z-index: 1002;
 }
 .cursorchik::after {
   content: "выбери сон";
@@ -48,7 +48,7 @@ section {
 .mainscreen {
   opacity: 100%;
   transition: all 1s;
-  z-index: 2;
+  z-index: 1000;
 }
 .shp {
   position: absolute;
@@ -96,13 +96,8 @@ section {
 }
 
 /* ЛЮБОВЬ */
-.changeDisplay {
-  display: none;
-}
-.changeOpacity {
-  opacity: 0;
-}
 .love {
+  display: none;
   opacity: 0;
   transition: all 1s;
   z-index: 1;
@@ -114,7 +109,7 @@ section {
   font-family: "PPNeueMontreal";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   transform: rotate(-10deg);
   filter: blur(1px);
   z-index: 8;
@@ -195,4 +190,354 @@ section {
   width: 310px;
   height: 310px;
   z-index: 5;
+}
+
+/* СПОКОЙСТВИЕ */
+.calm {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.calm_return {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: rotate(-10deg);
+  opacity: 60%;
+  z-index: 8;
+}
+.one_calm {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  opacity: 40%;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  transform: translate(-50%, 230%);
+  z-index: 20;
+}
+.one_calm p {
+  position: absolute;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calmcircle {
+  position: absolute;
+  /* display: none; */
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  filter: blur(180px);
+}
+.calm1 {
+  left: 1132px;
+  top: 473px;
+  width: 649px;
+  height: 649px;
+  z-index: 2;
+  background-color: #9ae1ef;
+  animation: calm1 9s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm1ch {
+  background-color: #B55B3D;
+}
+@keyframes calm1 {
+  0% {left: 1132px; top: 473px}
+  25% {left: 329px; top: 196px}
+  50% {left: 1020px; top: -270px}
+  75% {left: 589px; top: -502px}
+  100% {left: 1132px; top: 473px}
+}
+.calm2 {
+  left: 64px;
+  top: 717px;
+  width: 474px;
+  height: 474px;
+  z-index: 1;
+  background-color: #60c9aa;
+  animation: calm2 13s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm2ch {
+  background-color: #d94c42;
+}
+@keyframes calm2 {
+  0% {left: 64px; top: 717px}
+  25% {left: 1103px; top: 391px}
+  50% {left: 1264px; top: -3px}
+  75% {left: 179px; top: -137px}
+  100% {left: 64px; top: 717px}
+}
+.calm3 {
+  left: 643px;
+  top: -82px;
+  width: 778px;
+  height: 778px;
+  z-index: 2;
+  background-color: #aeb7ed;
+  animation: calm3 10s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm3ch {
+  background-color: #ff8b3f;
+}
+@keyframes calm3 {
+  0% {left: 643px; top: -82px}
+  25% {left: 1127px; top: 295px}
+  50% {left: 1319px; top: -264px}
+  75% {left: 89px; top: 114px}
+  100% {left: 643px; top: -82px}
+}
+.calm4 {
+  left: 330px;
+  top: 145px;
+  width: 476px;
+  height: 782px;
+  z-index: 1;
+  background-color: #506583;
+  animation: calm4 9s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm4ch {
+  background-color: #ffded4;
+}
+@keyframes calm4 {
+  0% {left: 330px; top: 145px}
+  25% {left: 808px; top: 436px}
+  50% {left: 1443px; top: -160px}
+  75% {left: 700px; top: -459px}
+  100% {left: 330px; top: 145px}
+}
+.calm5 {
+  left: 458px;
+  top: 591px;
+  width: 590px;
+  height: 590px;
+  z-index: 1;
+  background-color: #6384B2;
+  animation: calm5 16s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm5ch {
+  background-color: #e5ab34;
+}
+@keyframes calm5 {
+  0% {left: 458px; top: 634px}
+  25% {left: -62px; top: 71px}
+  50% {left: 872px; top: 231px}
+  75% {left: 1407px; top: 15px}
+  100% {left: 458px; top: 634px}
+}
+.calm6 {
+  left: 459px;
+  top: -88px;
+  width: 310px;
+  height: 310px;
+  z-index: 1;
+  background-color: #212A36;
+  animation: calm6 13s cubic-bezier(.37,0,.53,.99) infinite;
+}
+@keyframes calm6 {
+  0% {left: 459px; top: -88px}
+  25% {left: 1017px; top: 218px}
+  50% {left: 81px; top: 616px}
+  75% {left: -23px; top: 114px}
+  100% {left: 459px; top: -88px}
+}
+.calm7 {
+  left: 1137px;
+  top: -408px;
+  width: 1066px;
+  height: 1066px;
+  z-index: 1;
+  background-color: #6A9ADD;
+  animation: calm7 14s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm7ch {
+  background-color: #FF4000;
+}
+@keyframes calm7 {
+  0% {left: 1137px; top: -408px}
+  25% {left: 592px; top: -85px}
+  50% {left: -70px; top: -533px}
+  75% {left: 339px; top: 353px}
+  100% {left: 1137px; top: -408px}
+}
+.calm8 {
+  left: 62px;
+  top: 638px;
+  width: 364px;
+  height: 364px;
+  z-index: 1;
+  background-color: ##6377cf;
+  animation: calm8 8s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm8ch {
+  background-color: #ffb8a0;
+}
+@keyframes calm8 {
+  0% {left: 62px; top: 638px}
+  25% {left: 754px; top: 386px}
+  50% {left: 1353px; top: -87px}
+  75% {left: 1118px; top: 609px}
+  100% {left: 62px; top: 638px}
+}
+
+/* ГНЕВ */
+.anger {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.anger_return {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: rotate(-10deg);
+  color: #FF4000;
+  z-index: 8;
+  animation: angerreturn 0.5s linear infinite;
+}
+@keyframes angerreturn {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.anger_one {
+  background-color: #FFFFFF;
+}
+.angerCh1 {
+  opacity: 0;
+}
+.angerCh2 {
+  opacity: 0;
+}
+.star1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 426px;
+  height: 454px;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  animation: star1 0.5s linear infinite;
+}
+@keyframes star1 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 756px;
+  height: 795px;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  animation: star2 0.5s linear infinite;
+}
+@keyframes star2 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.star3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1312px;
+  height: 1341px;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  animation: star3 0.5s linear infinite;
+}
+@keyframes star3 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star4 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 2256px;
+  height: 2260px;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  animation: star4 0.5s linear infinite;
+}
+@keyframes star4 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.star5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3408px;
+  height: 3412px;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: star5 0.5s linear infinite;
+}
+@keyframes star5 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4542px;
+  height: 4548px;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: star6 0.5s linear infinite;
+}
+@keyframes star6 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.anger_two {
+  display: flex;
+  background-color: #FF4000;
+  animation: anger_two 0.5s linear infinite;
+}
+@keyframes anger_two {
+  0% {background-color: #FF4000}
+  50% {background-color: #FFFFFF}
+}
+.tri {
+  position: relative;
+  width: 25%;
+  color: #FFFFFF;
+  animation: tri 0.5s linear infinite;
+}
+@keyframes tri {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
 }
