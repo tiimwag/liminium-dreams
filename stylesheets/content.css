@@ -1,6 +1,779 @@
 body {
   background-color: #ffffff;
-  /* overflow: hidden; */
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+
+
+/* КУРСОР */
+* {
+  cursor: none;
+}
+.cursor {
+  position: absolute;
+  width: 0.833vw;
+  height: 0.833vw;
+  border-radius: 100%;
+  filter: blur(4px);
+  background-color: #373737;
+  z-index: 1001;
+}
+.cursorchik {
+  position: absolute;
+  width: 5.208vw;
+  height: 1.563vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: translate(24px, -22px);
+  z-index: 1002;
+}
+.cursorchik::after {
+  content: "выбери сон";
+}
+.cursorchikClick {
+  width: 130px;
+}
+.cursorchikClick::after {
+  content: "заглянуть в сон";
+}
+
+
+
+/* ФИГУРЫ ГЛАВНЫЙ ЭКРАН*/
+/* ФИГУРЫ ГЛАВНЫЙ ЭКРАН*/
+/* ФИГУРЫ ГЛАВНЫЙ ЭКРАН*/
+.mainscreen {
+  opacity: 100%;
+  transition: all 1s;
+  z-index: 1000;
+}
+.shp {
+  position: absolute;
+  transition: 0.5s all ease-out;
+  color: #B7B7B7;
+}
+.shp:hover {
+  transition: 0.5s all ease-out;
+  color: #FF4000;
+}
+.duo {
+  width: 42.240vw;
+  height: 16.302vw;
+  top: 0;
+  left: -7.656vw;
+  transform: rotate(201deg);
+}
+.star {
+  width: 30.833vw;
+  height: 41.615vw;
+  top: -16.719vw;
+  left: 36.667vw;
+  transform: rotate(13deg);
+}
+.row {
+  width: 44.375vw;
+  height: 12.188vw;
+  top: 0.521vw;
+  left: 67.969vw;
+  transform: rotate(336deg);
+}
+.cloud {
+  width: 40.833vw;
+  height: 28.177vw;
+  top: 26.406vw;
+  left: 2.604vw;
+  transform: rotate(-10deg);
+}
+.hex {
+  width: 30.521vw;
+  height: 35.260vw;
+  top: 24.323vw;
+  left: 56.615vw;
+  transform: rotate(20deg);
+}
+
+
+
+/* ЛЮБОВЬ */
+/* ЛЮБОВЬ */
+/* ЛЮБОВЬ */
+.love {
+  transition: all 1s;
+  z-index: 1;
+}
+.love_return {
+  position: absolute;
+  top: 3.385vw;
+  left: 2.604vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: rotate(-10deg);
+  filter: blur(1px);
+  z-index: 8;
+}
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #FF4000;
+  opacity: 40%;
+  animation: circle 9s ease-out infinite;
+}
+@keyframes circle {
+  0% {filter: blur(10px)}
+  25% {background-color: #506583}
+  50% {filter: blur(35px); background-color: #FF4000}
+  75% {background-color: #506583}
+  100% {filter: blur(10px)}
+}
+.love1 {
+  left: 26.042vw;
+  top: -6.927vw;
+  width: 34.896vw;
+  height: 34.896vw;
+  z-index: 2;
+}
+.love2 {
+  left: -4.167vw;
+  top: -3.490vw;
+  width: 27.083vw;
+  height: 27.083vw;
+  z-index: 3;
+}
+.love3 {
+  left: 62.500vw;
+  top: 505px;
+  width: 26.302vw;
+  height: 26.302vw;
+  z-index: 6;
+}
+.love4 {
+  left: 33.646vw;
+  top: 1.458vw;
+  width: 60.417vw;
+  height: 60.417vw;
+  z-index: 1;
+}
+.love5 {
+  left: 10.417vw;
+  top: 20.833vw;
+  width: 60.417vw;
+  height: 60.417vw;
+  z-index: 1;
+}
+.love6 {
+  left: 23.906vw;
+  top: 5.208vw;
+  width: 10.417vw;
+  height: 10.417vw;
+  z-index: 7;
+}
+.love7 {
+  left: 5.833vw;
+  top: 9.375vw;
+  width: 27.865vw;
+  height: 27.865vw;
+  z-index: 3;
+}
+.love8 {
+  left: 78.542vw;
+  top: 8.281vw;
+  width: 22.917vw;
+  height: 22.917vw;
+  z-index: 4;
+}
+.love9 {
+  left: 3.229vw;
+  top: 30.781vw;
+  width: 16.146vw;
+  height: 16.146vw;
+  z-index: 5;
+}
+
+
+
+/* СПОКОЙСТВИЕ */
+/* СПОКОЙСТВИЕ */
+/* СПОКОЙСТВИЕ */
+.calm {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.calm_return {
+  position: absolute;
+  top: 3.385vw;
+  left: 2.604vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: rotate(-10deg);
+  opacity: 60%;
+  z-index: 8;
+}
+.one_calm {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 5.729vw;
+  height: 5.729vw;
+  opacity: 40%;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  transform: translate(-50%, 230%);
+  z-index: 20;
+}
+.one_calm p {
+  position: absolute;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calmcircle {
+  position: absolute;
+  border-radius: 100%;
+  width: 10.417vw;
+  height: 10.417vw;
+  filter: blur(180px);
+}
+.calm1 {
+  left: 58.958vw;
+  top: 24.635vw;
+  width: 33.802vw;
+  height: 33.802vw;
+  z-index: 2;
+  background-color: #9ae1ef;
+  animation: calm1 9s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm1ch {
+  background-color: #B55B3D;
+}
+@keyframes calm1 {
+  0% {left: 58.958vw; top: 24.635vw}
+  25% {left: 17.135vw; top: 10.208vw}
+  50% {left: 53.125vw; top: -14.063vw}
+  75% {left: 30.677vw; top: -26.146vw}
+  100% {left: 58.958vw; top: 24.635vw}
+}
+.calm2 {
+  left: 3.333vw;
+  top: 37.344vw;
+  width: 24.688vw;
+  height: 24.688vw;
+  z-index: 1;
+  background-color: #60c9aa;
+  animation: calm2 13s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm2ch {
+  background-color: #d94c42;
+}
+@keyframes calm2 {
+  0% {left: 3.333vw; top: 37.344vw}
+  25% {left: 57.448vw; top: 20.365vw}
+  50% {left: 65.833vw; top: -0.156vw}
+  75% {left: 9.375vw; top: -7.135vw}
+  100% {left: 3.333vw; top: 37.344vw}
+}
+.calm3 {
+  left: 33.490vw;
+  top: -4.271vw;
+  width: 40.521vw;
+  height: 40.521vw;
+  z-index: 2;
+  background-color: #aeb7ed;
+  animation: calm3 10s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm3ch {
+  background-color: #ff8b3f;
+}
+@keyframes calm3 {
+  0% {left: 33.490vw; top: -4.271vw}
+  25% {left: 58.698vw; top: 15.365vw}
+  50% {left: 68.698vw; top: -13.750vw}
+  75% {left: 4.635vw; top: 5.938vw}
+  100% {left: 33.490vw; top: -4.271vw}
+}
+.calm4 {
+  left: 17.188vw;
+  top: 7.552vw;
+  width: 24.792vw;
+  height: 40.729vw;
+  z-index: 1;
+  background-color: #506583;
+  animation: calm4 9s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm4ch {
+  background-color: #ffded4;
+}
+@keyframes calm4 {
+  0% {left: 17.188vw; top: 7.552vw}
+  25% {left: 42.083vw; top: 22.708vw}
+  50% {left: 75.156vw; top: -8.333vw}
+  75% {left: 36.458vw; top: -23.906vw}
+  100% {left: 17.188vw; top: 7.552vw}
+}
+.calm5 {
+  left: 23.854vw;
+  top: 30.781vw;
+  width: 30.729vw;
+  height: 30.729vw;
+  z-index: 1;
+  background-color: #6384B2;
+  animation: calm5 16s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm5ch {
+  background-color: #e5ab34;
+}
+@keyframes calm5 {
+  0% {left: 23.854vw; top: 33.021vw}
+  25% {left: -3.229vw; top: 3.698vw}
+  50% {left: 45.417vw; top: 12.031vw}
+  75% {left: 73.281vw; top: 0.781vw}
+  100% {left: 23.854vw; top: 33.021vw}
+}
+.calm6 {
+  left: 23.906vw;
+  top: -4.583vw;
+  width: 16.146vw;
+  height: 16.146vw;
+  z-index: 1;
+  background-color: #212A36;
+  animation: calm6 13s cubic-bezier(.37,0,.53,.99) infinite;
+}
+@keyframes calm6 {
+  0% {left: 23.906vw; top: -4.583vw}
+  25% {left: 52.969vw; top: 11.354vw}
+  50% {left: 4.219vw; top: 32.083vw}
+  75% {left: -1.198vw; top: 5.938vw}
+  100% {left: 23.906vw; top: -4.583vw}
+}
+.calm7 {
+  left: 59.219vw;
+  top: -21.250vw;
+  width: 55.521vw;
+  height: 55.521vw;
+  z-index: 1;
+  background-color: #6A9ADD;
+  animation: calm7 14s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm7ch {
+  background-color: #FF4000;
+}
+@keyframes calm7 {
+  0% {left: 59.219vw; top: -21.250vw}
+  25% {left: 30.833vw; top: -4.427vw}
+  50% {left: -3.646vw; top: -27.760vw}
+  75% {left: 17.656vw; top: 18.385vw}
+  100% {left: 59.219vw; top: -21.250vw}
+}
+.calm8 {
+  left: 3.229vw;
+  top: 33.229vw;
+  width: 364px;
+  height: 364px;
+  z-index: 1;
+  background-color: ##6377cf;
+  animation: calm8 8s cubic-bezier(.37,0,.53,.99) infinite;
+  transition: all 0.5s;
+}
+.calm8ch {
+  background-color: #ffb8a0;
+}
+@keyframes calm8 {
+  0% {left: 3.229vw; top: 33.229vw}
+  25% {left: 39.271vw; top: 20.104vw}
+  50% {left: 70.469vw; top: -4.531vw}
+  75% {left: 58.229vw; top: 31.719vw}
+  100% {left: 3.229vw; top: 33.229vw}
+}
+
+
+
+/* ГНЕВ */
+/* ГНЕВ */
+/* ГНЕВ */
+.anger {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.anger_return {
+  position: absolute;
+  top: 3.385vw;
+  left: 2.604vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transform: rotate(-10deg);
+  color: #FF4000;
+  z-index: 8;
+  animation: angerreturn 0.5s linear infinite;
+}
+@keyframes angerreturn {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.anger_one {
+  background-color: #FFFFFF;
+}
+.angerCh1 {
+  opacity: 0;
+}
+.angerCh2 {
+  opacity: 0;
+}
+.star1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22.188vw;
+  height: 23.646vw;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  animation: star1 0.5s linear infinite;
+}
+@keyframes star1 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 39.375vw;
+  height: 41.406vw;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  animation: star2 0.5s linear infinite;
+}
+@keyframes star2 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.star3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68.333vw;
+  height: 69.844vw;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  animation: star3 0.5s linear infinite;
+}
+@keyframes star3 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star4 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 117.500vw;
+  height: 117.708vw;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  animation: star4 0.5s linear infinite;
+}
+@keyframes star4 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.star5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.500vw;
+  height: 177.708vw;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: star5 0.5s linear infinite;
+}
+@keyframes star5 {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+.star6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 236.563vw;
+  height: 236.875vw;
+  color: #FF4000;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: star6 0.5s linear infinite;
+}
+@keyframes star6 {
+  0% {color: #FF4000}
+  50% {color: #FFFFFF}
+}
+.anger_two {
+  display: flex;
+  background-color: #FF4000;
+  animation: anger_two 0.5s linear infinite;
+}
+@keyframes anger_two {
+  0% {background-color: #FF4000}
+  50% {background-color: #FFFFFF}
+}
+.tri {
+  position: relative;
+  width: 25%;
+  color: #FFFFFF;
+  animation: tri 0.5s linear infinite;
+}
+@keyframes tri {
+  0% {color: #FFFFFF}
+  50% {color: #FF4000}
+}
+
+
+
+/* СТРАХ */
+/* СТРАХ */
+/* СТРАХ */
+.fear {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+  background-color: #000000;
+}
+.fear_return {
+  position: absolute;
+  top: 3.385vw;
+  left: 2.604vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  transform: rotate(-10deg);
+  animation: fear_return 0.3s linear infinite;
+  z-index: 8;
+}
+@keyframes fear_return {
+  0% {top: 3.385vw; left: 2.604vw}
+  20% {top: 3.438vw; left: 2.708vw}
+  40% {top: 3.333vw; left: 2.552vw}
+  60% {top: 3.385vw; left: 2.604vw}
+  80% {top: 3.333vw; left: 2.552vw}
+  100% {top: 3.385vw; left: 2.604vw}
+}
+.pers_circle {
+  position: absolute;
+  width: 10.417vw;
+  height: 10.417vw;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #EDEDED;
+  animation: pers 0.3s linear infinite;
+}
+@keyframes pers {
+  0% {top: 50%; left: 50%}
+  25% {top: 49.8%; left: 49.8%}
+  50% {top: 50%; left: 50.2%}
+  75% {top: 50.5%; left: 49.9%}
+  100% {top: 50%; left: 50%}
+}
+.needle {
+  position: absolute;
+  width: 18.750vw;
+  height: 95.052vw;
+  color: #FF4000;
+}
+.n1 {
+  top: 37.604vw;
+  left: 40.521vw;
+}
+.n2 {
+  top: 29.531vw;
+  left: 3.854vw;
+  transform: rotate(36deg);
+}
+.n3 {
+  top: -2.865vw;
+  left: -16.615vw;
+  transform: rotate(73deg);
+}
+.n4 {
+  top: -46.146vw;
+  left: -13.906vw;
+  transform: rotate(116deg);
+}
+.n5 {
+  top: -80.469vw;
+  left: 26.927vw;
+  transform: rotate(168deg);
+}
+.n6 {
+  top: -79.271vw;
+  left: 57.292vw;
+  transform: rotate(192deg);
+}
+.n7 {
+  top: -53.281vw;
+  left: 94.323vw;
+  transform: rotate(237deg);
+}
+.n8 {
+  top: -19.375vw;
+  left: 107.396vw;
+  transform: rotate(270deg);
+}
+.n9 {
+  top: 17.083vw;
+  left: 86.875vw;
+  transform: rotate(308deg);
+}
+
+
+
+/* РАДОСТЬ */
+/* РАДОСТЬ */
+/* РАДОСТЬ */
+.joy {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.joyRed {
+  background-color: #FF4000;
+}
+.joy_return {
+  position: absolute;
+  top: 3.385vw;
+  left: 2.604vw;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF4000;
+  transform: rotate(-10deg);
+  z-index: 8;
+  transition: all 1s;
+}
+.joy_returnWhite {
+  color: #FFFFFF;
+}
+/* .jbrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+} */
+.joybox {
+  position: absolute;
+  width: 7.813vw;
+  height: 7.813vw;
+  margin: 0 5.208vw;
+  background-color: #FF4000;
+  border-radius: 100%;
+  transition: all 1s;
+}
+.joyboxWhite {
+  background-color: #FFFFFF;
+}
+.jb1 {
+  left: 19%;
+  transform: translate(-50%, -50%);
+  animation: jb1 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+  animation-delay: -0.8s;
+}
+@keyframes jb1 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.jb2 {
+  left: 45%;
+  transform: translate(-50%, -50%);
+  animation: jb2 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+  animation-delay: -0.4s;
+}
+@keyframes jb2 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.jb2Ch1 {
+  border-radius: 0;
+}
+.jb2Ch2 {
+  filter: blur(17px);
+}
+.jb2Ch3 {
+  background-color: #506583;
+}
+.jb3 {
+  left: 71%;
+  transform: translate(-50%, -50%);
+  animation: jb3 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+}
+@keyframes jb3 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.drawing {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.drawingD {
+  display: block;
+}
+.canvass {
+  display: none;
+}
+.disp {
+  display: block;
+}
+
+/*
+body {
+  background-color: #ffffff;
 }
 section {
   position: absolute;
@@ -10,7 +783,9 @@ section {
   overflow: hidden;
 }
 
-/* КУРСОР */
+
+
+
 * {
   cursor: none;
 }
@@ -20,7 +795,7 @@ section {
   height: 16px;
   border-radius: 100%;
   filter: blur(4px);
-  background-color: #000000;
+  background-color: #373737;
   z-index: 1001;
 }
 .cursorchik {
@@ -44,7 +819,9 @@ section {
   content: "заглянуть в сон";
 }
 
-/* ФИГУРЫ ГЛАВНЫЙ ЭКРАН*/
+
+
+
 .mainscreen {
   opacity: 100%;
   transition: all 1s;
@@ -95,10 +872,10 @@ section {
   transform: rotate(20deg);
 }
 
-/* ЛЮБОВЬ */
+
+
+
 .love {
-  display: none;
-  opacity: 0;
   transition: all 1s;
   z-index: 1;
 }
@@ -192,7 +969,9 @@ section {
   z-index: 5;
 }
 
-/* СПОКОЙСТВИЕ */
+
+
+
 .calm {
   display: none;
   opacity: 0;
@@ -236,7 +1015,6 @@ section {
 }
 .calmcircle {
   position: absolute;
-  /* display: none; */
   border-radius: 100%;
   width: 200px;
   height: 200px;
@@ -399,7 +1177,9 @@ section {
   100% {left: 62px; top: 638px}
 }
 
-/* ГНЕВ */
+
+
+
 .anger {
   display: none;
   opacity: 0;
@@ -541,3 +1321,224 @@ section {
   0% {color: #FFFFFF}
   50% {color: #FF4000}
 }
+
+
+
+
+.fear {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+  background-color: #000000;
+}
+.fear_return {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  transform: rotate(-10deg);
+  animation: fear_return 0.3s linear infinite;
+  z-index: 8;
+}
+@keyframes fear_return {
+  0% {top: 65px; left: 50px}
+  20% {top: 66px; left: 52px}
+  40% {top: 64px; left: 49px}
+  60% {top: 65px; left: 50px}
+  80% {top: 64px; left: 49px}
+  100% {top: 65px; left: 50px}
+}
+.pers_circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #EDEDED;
+  animation: pers 0.3s linear infinite;
+}
+@keyframes pers {
+  0% {top: 50%; left: 50%}
+  25% {top: 49.8%; left: 49.8%}
+  50% {top: 50%; left: 50.2%}
+  75% {top: 50.5%; left: 49.9%}
+  100% {top: 50%; left: 50%}
+}
+.needle {
+  position: absolute;
+  color: #FF4000;
+}
+.n1 {
+  width: 360px;
+  height: 1825px;
+  top: 722px;
+  left: 778px;
+}
+.n2 {
+  width: 360px;
+  height: 1825px;
+  top: 567px;
+  left: 74px;
+  transform: rotate(36deg);
+}
+.n3 {
+  width: 360px;
+  height: 1825px;
+  top: -55px;
+  left: -319px;
+  transform: rotate(73deg);
+}
+.n4 {
+  width: 360px;
+  height: 1825px;
+  top: -886px;
+  left: -267px;
+  transform: rotate(116deg);
+}
+.n5 {
+  width: 360px;
+  height: 1825px;
+  top: -1545px;
+  left: 517px;
+  transform: rotate(168deg);
+}
+.n6 {
+  width: 360px;
+  height: 1825px;
+  top: -1522px;
+  left: 1100px;
+  transform: rotate(192deg);
+}
+.n7 {
+  width: 360px;
+  height: 1825px;
+  top: -1023px;
+  left: 1811px;
+  transform: rotate(237deg);
+}
+.n8 {
+  width: 360px;
+  height: 1825px;
+  top: -372px;
+  left: 2062px;
+  transform: rotate(270deg);
+}
+.n9 {
+  width: 360px;
+  height: 1825px;
+  top: 328px;
+  left: 1668px;
+  transform: rotate(308deg);
+}
+
+
+
+
+.joy {
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+.joyRed {
+  background-color: #FF4000;
+}
+.joy_return {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF4000;
+  transform: rotate(-10deg);
+  z-index: 8;
+  transition: all 1s;
+}
+.joy_returnWhite {
+  color: #FFFFFF;
+}
+.joybox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin: 0 100px;
+  background-color: #FF4000;
+  border-radius: 100%;
+  transition: all 1s;
+}
+.joyboxWhite {
+  background-color: #FFFFFF;
+}
+.jb1 {
+  left: 19%;
+  transform: translate(-50%, -50%);
+  animation: jb1 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+  animation-delay: -0.8s;
+}
+@keyframes jb1 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.jb2 {
+  left: 45%;
+  transform: translate(-50%, -50%);
+  animation: jb2 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+  animation-delay: -0.4s;
+}
+@keyframes jb2 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.jb2Ch1 {
+  border-radius: 0;
+}
+.jb2Ch2 {
+  filter: blur(17px);
+}
+.jb2Ch3 {
+  background-color: #506583;
+}
+.jb3 {
+  left: 71%;
+  transform: translate(-50%, -50%);
+  animation: jb3 3s cubic-bezier(.57,-0.01,.61,1) infinite;
+}
+@keyframes jb3 {
+  0% {top: 75%}
+  50% {top: 25%}
+  100% {top: 75%}
+}
+.drawing {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.drawingD {
+  display: block;
+}
+.canvass {
+  display: none;
+}
+.disp {
+  display: block;
+}
+*/
