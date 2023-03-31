@@ -98,6 +98,12 @@
   }
 }
 @media all and (min-width: 414px) and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+  .cursorchik {
+    display: none;
+  }
   .duo {
     width: 52.24vw;
     height: 22.302vw;
@@ -133,6 +139,12 @@
   }
 }
 @media all and (min-width: 360px) and (max-width: 414px) and (orientation: portrait) {
+  .cursor {
+    display: none;
+  }
+  .cursorchik {
+    display: none;
+  }
   .duo {
     width: 84.241vw;
     height: 44.302vw;
